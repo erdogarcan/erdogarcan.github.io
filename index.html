@@ -793,6 +793,7 @@ section { padding-block: 72px; }
   font-weight: 500;
 }
 .form-success.show { display: block; }
+.form-success.error { background: #FBEDED; border-color: #C25B5B; color: #7A1F1F; }
 
 @media (max-width: 768px) {
   .contact-grid { grid-template-columns: 1fr; }
@@ -1371,7 +1372,7 @@ footer {
           <div class="contact-info-icon">✉️</div>
           <div>
             <div class="contact-info-label" data-tr="E-posta" data-en="E-mail">E-mail</div>
-            <div class="contact-info-val">info@fourxlab.com</div>
+            <div class="contact-info-val"><a href="mailto:info@fourxlab.com" style="color:inherit;text-decoration:none;">info@fourxlab.com</a></div>
           </div>
         </div>
         <div class="contact-info-item">
@@ -1387,16 +1388,16 @@ footer {
         <div class="form-row">
           <div class="form-group">
             <label data-tr="Ad Soyad" data-en="Full Name">Full Name</label>
-            <input type="text" required="" placeholder="">
+            <input type="text" id="f-name" required="" placeholder="">
           </div>
           <div class="form-group">
             <label data-tr="Kurum / Firma" data-en="Organization">Organization</label>
-            <input type="text" required="" placeholder="">
+            <input type="text" id="f-org" required="" placeholder="">
           </div>
         </div>
         <div class="form-group">
           <label data-tr="E-posta" data-en="Email">Email</label>
-          <input type="email" required="" placeholder="">
+          <input type="email" id="f-email" required="" placeholder="">
         </div>
         <div class="form-group">
           <label data-tr="Hizmet Alanı" data-en="Service Area">Service Area</label>
@@ -1423,12 +1424,11 @@ footer {
         </div>
         <div class="form-group">
           <label data-tr="Projenizi kısaca açıklayın" data-en="Brief project description">Brief project description</label>
-          <textarea placeholder=""></textarea>
+          <textarea id="f-msg" placeholder=""></textarea>
         </div>
+        <input type="checkbox" id="f-botcheck" tabindex="-1" autocomplete="off" style="display:none">
         <button type="submit" class="form-submit" data-tr="Teklif Talep Et →" data-en="Request Quote →">Request Quote →</button>
-        <div class="form-success" id="form-success">
-          <span data-tr="✓ Talebiniz alındı. En kısa sürede size dönüş yapacağız." data-en="✓ Your request has been received. We'll be in touch shortly.">✓ Your request has been received. We'll be in touch shortly.</span>
-        </div>
+        <div class="form-success" id="form-success"><span></span></div>
       </form>
     </div>
   </div>
@@ -1683,10 +1683,54 @@ function toggleMenu() {
   btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
 
-function submitForm(e) {
+const WEB3FORMS_KEY = '7f0df0ed-cd18-43c9-9aa9-d7a1550af42c';
+const FORM_MSG = {
+  ok:  { tr: '✓ Talebiniz alındı. En kısa sürede size dönüş yapacağız.', en: "✓ Your request has been received. We'll be in touch shortly." },
+  err: { tr: 'Gönderilemedi. Lütfen tekrar deneyin veya info@fourxlab.com adresine yazın.', en: 'Could not send. Please try again or write to info@fourxlab.com.' }
+};
+
+function showFormStatus(kind) {
+  const box = document.getElementById('form-success');
+  const span = box.querySelector('span');
+  span.setAttribute('data-tr', FORM_MSG[kind].tr);
+  span.setAttribute('data-en', FORM_MSG[kind].en);
+  box.classList.toggle('error', kind === 'err');
+  box.classList.add('show');
+  applyLangAttrs();
+}
+
+async function submitForm(e) {
   e.preventDefault();
-  document.getElementById('form-success').classList.add('show');
-  e.target.querySelectorAll('input, select, textarea, button[type=submit]').forEach(el => el.disabled = true);
+  const form = e.target;
+  const btn = form.querySelector('button[type=submit]');
+  const sel = document.getElementById('svc-select');
+  const name = document.getElementById('f-name').value.trim();
+  btn.disabled = true;
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: 'FourX Lab - Teklif Talebi / Quote Request: ' + name,
+        from_name: 'FourX Lab Website',
+        name: name,
+        email: document.getElementById('f-email').value.trim(),
+        organization: document.getElementById('f-org').value.trim(),
+        service: sel.selectedIndex > 0 ? sel.options[sel.selectedIndex].textContent : '',
+        message: document.getElementById('f-msg').value.trim(),
+        language: lang,
+        botcheck: document.getElementById('f-botcheck').checked
+      })
+    });
+    const data = await res.json();
+    if (!res.ok || !data.success) throw new Error(data.message || res.status);
+    showFormStatus('ok');
+    form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
+  } catch (err) {
+    showFormStatus('err');
+    btn.disabled = false;
+  }
 }
 
 /* Scroll to top */
