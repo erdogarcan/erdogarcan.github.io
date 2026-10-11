@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FourX Lab | Analytical Testing &amp; R&amp;D for Pharma, Cosmetics &amp; Medical Devices</title>
+<meta name="description" content="Analytical testing and R&amp;D for pharma, cosmetics and medical device companies: validation, stability, IVRT/IVPT, biocompatibility, regulatory support. Ankara.">
+<link rel="canonical" href="https://fourxlab.com/en/">
+<link rel="alternate" hreflang="tr" href="https://fourxlab.com/">
+<link rel="alternate" hreflang="en" href="https://fourxlab.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://fourxlab.com/">
+<meta name="theme-color" content="#1B4D2E">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FourX Lab">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://fourxlab.com/en/">
+<meta property="og:title" content="FourX Lab | Analytical Testing &amp; R&amp;D for Pharma, Cosmetics &amp; Medical Devices">
+<meta property="og:description" content="Analytical testing and R&amp;D for pharma, cosmetics and medical device companies: validation, stability, IVRT/IVPT, biocompatibility, regulatory support. Ankara.">
+<meta property="og:image" content="https://fourxlab.com/og-image-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FourX Lab | Analytical Testing &amp; R&amp;D for Pharma, Cosmetics &amp; Medical Devices">
+<meta name="twitter:description" content="Analytical testing and R&amp;D for pharma, cosmetics and medical device companies: validation, stability, IVRT/IVPT, biocompatibility, regulatory support. Ankara.">
+<meta name="twitter:image" content="https://fourxlab.com/og-image-en.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FourX Lab",
+  "url": "https://fourxlab.com/",
+  "logo": "https://fourxlab.com/apple-touch-icon.png",
+  "description": "Analytical testing and R&D for pharma, cosmetics and medical device companies: validation, stability, IVRT/IVPT, biocompatibility, regulatory support. Ankara.",
+  "email": "info@fourxlab.com",
+  "telephone": "+90 533 487 95 27",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hacettepe Teknokent, Üniversiteler Mah. 1596 Cad. No: 6/E",
+    "addressLocality": "Çankaya",
+    "addressRegion": "Ankara",
+    "addressCountry": "TR"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;display=swap">
+
+<style>
+/* ── TOKEN LAYER ─────────────────────────────────────────── */
+:root {
+  --green-dark:  #1B4D2E;
+  --green-mid:   #2D6A4F;
+  --green-light: #4A8C68;
+  --green-pale:  #EAF2EC;
+  --gold:        #C8A951;
+  --gold-light:  #F5EDD6;
+  --bg:          #F7F9F7;
+  --bg-white:    #FFFFFF;
+  --fg:          #1A1A1A;
+  --fg-sub:      #4A5550;
+  --fg-muted:    #7A8C82;
+  --border:      #D4E0D8;
+  --border-mid:  #B8CEC2;
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --green-dark:  #2D6A4F;
+    --green-mid:   #3D8A65;
+    --green-light: #5AAD80;
+    --green-pale:  #0E2318;
+    --gold:        #D4B86A;
+    --gold-light:  #2A2010;
+    --bg:          #0A140D;
+    --bg-white:    #111A13;
+    --fg:          #E8F0EA;
+    --fg-sub:      #9DB8A5;
+    --fg-muted:    #6A8A72;
+    --border:      #1E3528;
+    --border-mid:  #2A4A35;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --green-dark:  #2D6A4F;
+  --green-mid:   #3D8A65;
+  --green-light: #5AAD80;
+  --green-pale:  #0E2318;
+  --gold:        #D4B86A;
+  --gold-light:  #2A2010;
+  --bg:          #0A140D;
+  --bg-white:    #111A13;
+  --fg:          #E8F0EA;
+  --fg-sub:      #9DB8A5;
+  --fg-muted:    #6A8A72;
+  --border:      #1E3528;
+  --border-mid:  #2A4A35;
+  color-scheme: dark;
+}
+
+/* ── RESET ───────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  padding-inline: 0;
+}
+img { max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ── UTILITY ─────────────────────────────────────────────── */
+.container {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}
+
+/* ── NAV ─────────────────────────────────────────────────── */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #FFFFFF;
+  border-bottom: 1.5px solid var(--border);
+  box-shadow: 0 1px 8px rgba(27,77,46,0.06);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: 24px;
+}
+
+/* Logo mark inline SVG */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.nav-logo svg { width: 44px; height: 44px; }
+.nav-wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.nav-wordmark-top {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  color: var(--green-dark);
+  text-transform: uppercase;
+}
+.nav-wordmark-lab {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+}
+.nav-links a {
+  color: var(--fg-sub);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  transition: color 0.15s, background 0.15s;
+}
+.nav-links a:hover {
+  color: var(--green-dark);
+  background: var(--green-pale);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Lang toggle */
+.lang-toggle {
+  display: flex;
+  background: var(--green-pale);
+  border-radius: 999px;
+  padding: 2px;
+  border: 1px solid var(--border);
+}
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--fg-muted);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.lang-btn.active {
+  background: var(--green-dark);
+  color: #fff;
+}
+
+/* ── ABOUT ───────────────────────────────────────────────── */
+#about {
+  padding-block: 48px;
+  background: var(--green-pale, #EEF5F1);
+  border-bottom: 1.5px solid var(--border);
+}
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  align-items: center;
+}
+.about-quote {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-text {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.45;
+  color: var(--green-dark);
+  font-style: italic;
+  margin: 0;
+}
+.about-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about-pill {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--bg-white, #fff);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+}
+.about-pill-icon { font-size: 20px; line-height: 1; margin-top: 2px; }
+.about-pill-title { font-weight: 700; font-size: 14px; color: var(--fg); margin-bottom: 2px; }
+.about-pill-sub { font-size: 13px; color: var(--fg-sub); line-height: 1.5; }
+@media (max-width: 768px) {
+  .about-inner { grid-template-columns: 1fr; gap: 24px; }
+}
+
+.nav-cta {
+  background: var(--gold);
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.15s;
+}
+.nav-cta:hover { opacity: 0.88; }
+
+.nav-phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--green-dark);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  transition: background 0.15s;
+}
+.nav-phone:hover { background: var(--green-pale); }
+
+/* Mobile nav */
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--green-dark);
+}
+.mobile-menu {
+  display: none;
+  background: #FFFFFF;
+  border-top: 1.5px solid var(--border);
+  padding: 12px 20px 20px;
+}
+.mobile-menu.open { display: block; }
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.mobile-menu ul a {
+  display: block;
+  color: var(--fg-sub);
+  font-size: 15px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.mobile-menu-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-cta, .nav-phone { display: none; }
+  .nav-hamburger { display: flex; }
+}
+
+/* ── HERO ─────────────────────────────────────────────────── */
+#hero {
+  background: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  padding-block: 80px 72px;
+  border-bottom: 1.5px solid var(--border);
+}
+/* Subtle pattern overlay */
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 85% 15%, rgba(200,169,81,0.07) 0%, transparent 45%),
+    radial-gradient(circle at 10% 85%, rgba(27,77,46,0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+.hero-h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.12;
+  color: #0B120D;
+  text-wrap: balance;
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.hero-h1 em {
+  font-style: italic;
+  color: #123A22;
+}
+.hero-sub {
+  color: var(--fg-sub);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  background: var(--gold);
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 26px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.15s;
+}
+.btn-primary:hover { opacity: 0.88; }
+.btn-outline {
+  background: transparent;
+  color: var(--green-dark);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 11px 24px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--green-dark);
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.btn-outline:hover {
+  background: var(--green-pale);
+  border-color: var(--green-mid);
+  color: var(--green-mid);
+}
+
+/* Hero amblem */
+.hero-emblem {
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+.hero-emblem svg {
+  width: 260px;
+  height: 260px;
+}
+
+/* Stat strip */
+.hero-stats {
+  display: flex;
+  gap: 0;
+  margin-top: 52px;
+  border-top: 1.5px solid var(--border);
+  padding-top: 32px;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  flex: 1;
+  min-width: 120px;
+  padding-right: 32px;
+}
+.hero-stat:not(:last-child) {
+  border-right: 1.5px solid var(--border);
+  margin-right: 32px;
+}
+.hero-stat-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 32px;
+  color: var(--green-dark);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.hero-stat-lbl {
+  font-size: 12px;
+  color: var(--fg-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-emblem { display: none; }
+  .hero-stat { padding-right: 16px; margin-right: 16px; }
+}
+
+/* ── SECTION COMMONS ─────────────────────────────────────── */
+section { padding-block: 72px; }
+.section-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background: var(--green-mid);
+}
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.18;
+  text-wrap: balance;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+.section-sub {
+  color: var(--fg-sub);
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 540px;
+  margin-bottom: 48px;
+}
+
+/* ── SERVICES ─────────────────────────────────────────────── */
+#services { background: var(--bg-white); }
+.services-header { margin-bottom: 44px; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.svc-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.svc-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--green-dark);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.svc-card:hover {
+  border-color: var(--green-light);
+  box-shadow: 0 4px 24px rgba(27,77,46,0.08);
+}
+.svc-card:hover::before { opacity: 1; }
+.svc-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--green-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.svc-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--fg);
+}
+.svc-desc {
+  font-size: 13px;
+  color: var(--fg-sub);
+  line-height: 1.6;
+}
+.svc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+.svc-tag {
+  background: var(--green-pale);
+  color: var(--green-dark);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+
+/* ── WHY ──────────────────────────────────────────────────── */
+#why { background: var(--bg); }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+.why-card {
+  padding: 28px 24px;
+  border-radius: var(--radius-md);
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+}
+.why-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  color: var(--border-mid);
+  line-height: 1;
+  margin-bottom: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.why-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--fg);
+}
+.why-desc {
+  font-size: 13px;
+  color: var(--fg-sub);
+  line-height: 1.6;
+}
+
+/* ── FIELDS ─────────────────────────────────────────────────── */
+#fields {
+  background: var(--bg);
+  padding-block: 64px;
+}
+.fields-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.field-pill {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px 20px;
+  background: var(--bg-white);
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+.field-pill:hover {
+  border-color: var(--green-light);
+  box-shadow: 0 2px 12px rgba(27,77,46,0.07);
+}
+.field-pill-icon { font-size: 22px; margin-bottom: 10px; }
+.field-pill-title {
+  color: var(--fg);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.field-pill-sub {
+  color: var(--fg-sub);
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media (max-width: 640px) {
+  .fields-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── PROCESS ─────────────────────────────────────────────── */
+#process { background: var(--bg-white); }
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0;
+  position: relative;
+}
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  right: 20px;
+  height: 1.5px;
+  background: var(--border);
+  z-index: 0;
+}
+.step {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px 0 0;
+}
+.step-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--green-dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+}
+.step-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: var(--fg);
+}
+.step-desc {
+  font-size: 13px;
+  color: var(--fg-sub);
+  line-height: 1.6;
+}
+@media (max-width: 600px) {
+  .steps::before { display: none; }
+  .steps { gap: 24px; }
+  .step { display: flex; gap: 16px; padding: 0; }
+  .step-num { flex-shrink: 0; }
+}
+
+/* ── CONTACT ─────────────────────────────────────────────── */
+#contact {
+  background: var(--bg);
+  padding-block: 72px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.contact-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-info-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.contact-info-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--green-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.contact-info-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 2px;
+}
+.contact-info-val {
+  font-size: 14px;
+  color: var(--fg);
+  line-height: 1.5;
+}
+
+/* Contact form */
+.contact-form {
+  background: var(--bg-white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fg-sub);
+  letter-spacing: 0.02em;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--fg);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--green-mid);
+}
+.form-group textarea { resize: vertical; min-height: 90px; }
+.form-submit {
+  background: var(--green-dark);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-top: 4px;
+}
+.form-submit:hover { background: var(--green-mid); }
+.form-success {
+  display: none;
+  background: var(--green-pale);
+  border: 1px solid var(--green-light);
+  color: var(--green-dark);
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+}
+.form-success.show { display: block; }
+.form-success.error { background: #FBEDED; border-color: #C25B5B; color: #7A1F1F; }
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+footer {
+  background: var(--green-dark);
+  padding-block: 40px 32px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.footer-brand { max-width: 280px; }
+.footer-brand p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+  margin-top: 12px;
+}
+.footer-links-col h4 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 12px;
+}
+.footer-links-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-links-col ul a {
+  color: rgba(255,255,255,0.6);
+  font-size: 13px;
+  transition: color 0.15s;
+}
+.footer-links-col ul a:hover { color: #fff; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer-bottom p { color: rgba(255,255,255,0.3); font-size: 12px; }
+
+/* ── SCROLL TO TOP ───────────────────────────────────────── */
+#scroll-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--green-dark);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 50;
+}
+#scroll-top.visible { opacity: 1; }
+</style>
+
+<!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+</head><body><nav id="nav" role="navigation" aria-label="Ana menü">
+  <div class="container nav-inner">
+    <!-- Logo -->
+    <a href="#" class="nav-logo" aria-label="FourX Lab Ana Sayfa">
+      <!-- Amblem: gerçek logo — çapraz X tüpler, P-I-N-G, yapraklar -->
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <clipPath id="tube-left-clip">
+            <path d="M17 8 Q17 4 21 4 L29 4 Q33 4 33 8 L33 92 Q33 96 29 96 L21 96 Q17 96 17 92 Z"></path>
+          </clipPath>
+          <clipPath id="tube-right-clip">
+            <path d="M67 8 Q67 4 71 4 L79 4 Q83 4 83 8 L83 92 Q83 96 79 96 L71 96 Q67 96 67 92 Z"></path>
+          </clipPath>
+        </defs>
+
+        <!-- Sol tüp: sol üst → sağ alt (eğim ~40°) -->
+        <g transform="rotate(40 50 50)">
+          <!-- Tüp gövdesi -->
+          <rect x="42" y="5" width="16" height="82" rx="8" fill="white" stroke="#1B4D2E" stroke-width="1.8"></rect>
+          <!-- Tüp ağzı kapak -->
+          <rect x="42" y="3" width="16" height="10" rx="5" fill="white" stroke="#1B4D2E" stroke-width="1.8"></rect>
+          <!-- Molekül yapısı (üst kısım) -->
+          <g transform="translate(50,28)" stroke="#1B4D2E" stroke-width="0.9" fill="none">
+            <line x1="0" y1="-8" x2="5" y2="-4"></line>
+            <line x1="5" y1="-4" x2="5" y2="2"></line>
+            <line x1="5" y1="2" x2="0" y2="6"></line>
+            <line x1="0" y1="6" x2="-5" y2="2"></line>
+            <line x1="-5" y1="2" x2="-5" y2="-4"></line>
+            <line x1="-5" y1="-4" x2="0" y2="-8"></line>
+            <line x1="0" y1="6" x2="0" y2="10"></line>
+            <circle cx="0" cy="13" r="2" stroke-width="0.9"></circle>
+          </g>
+          <!-- Mikroskop (alt kısım) -->
+          <g transform="translate(50,68)" stroke="#1B4D2E" stroke-width="0.9" fill="none">
+            <rect x="-5" y="2" width="10" height="6" rx="1"></rect>
+            <line x1="0" y1="2" x2="0" y2="-6"></line>
+            <rect x="-3" y="-8" width="6" height="3" rx="1"></rect>
+            <line x1="-6" y1="8" x2="6" y2="8"></line>
+          </g>
+        </g>
+
+        <!-- Sağ tüp: sağ üst → sol alt (eğim -40°) -->
+        <g transform="rotate(-40 50 50)">
+          <!-- Tüp gövdesi -->
+          <rect x="42" y="5" width="16" height="82" rx="8" fill="white" stroke="#1B4D2E" stroke-width="1.8"></rect>
+          <!-- Tüp ağzı kapak -->
+          <rect x="42" y="3" width="16" height="10" rx="5" fill="white" stroke="#1B4D2E" stroke-width="1.8"></rect>
+          <!-- Damlalık (üst kısım) -->
+          <g transform="translate(50,28)" stroke="#1B4D2E" stroke-width="0.9" fill="none">
+            <rect x="-2" y="-10" width="4" height="10" rx="1"></rect>
+            <line x1="0" y1="0" x2="0" y2="6"></line>
+            <ellipse cx="0" cy="8" rx="1.5" ry="2"></ellipse>
+            <!-- Şişe -->
+            <path d="M-5 12 Q-5 9 -2 9 L2 9 Q5 9 5 12 L6 20 Q6 23 0 23 Q-6 23 -6 20 Z"></path>
+          </g>
+          <!-- Bitki + kavanoz (alt kısım) -->
+          <g transform="translate(50,66)" stroke="#1B4D2E" stroke-width="0.9" fill="none">
+            <path d="M0 0 Q4 -8 2 -14"></path>
+            <path d="M0 0 Q-4 -6 -2 -12"></path>
+            <path d="M0 -4 Q5 -4 4 -10"></path>
+            <!-- Kavanoz -->
+            <rect x="-5" y="2" width="10" height="7" rx="2"></rect>
+            <rect x="-4" y="0" width="8" height="3" rx="1"></rect>
+          </g>
+        </g>
+
+        <!-- Ortadaki yapraklar (X kavşağında) -->
+        <g transform="translate(50 50)">
+          <!-- Sol yaprak -->
+          <path d="M0 0 Q-10 -10 -4 -18 Q2 -10 0 0Z" fill="#1B4D2E" opacity="0.85"></path>
+          <!-- Sağ yaprak -->
+          <path d="M0 0 Q8 -6 6 -16 Q0 -8 0 0Z" fill="#2D6A4F" opacity="0.75"></path>
+          <!-- Yaprak damarı -->
+          <line x1="0" y1="0" x2="-2" y2="-17" stroke="#1B4D2E" stroke-width="0.7" opacity="0.6"></line>
+        </g>
+
+      </svg>
+      <div class="nav-wordmark">
+        <span class="nav-wordmark-top">FourX</span>
+        <span class="nav-wordmark-lab">lab</span>
+      </div>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="#services" data-tr="Hizmetler" data-en="Services">Services</a></li>
+      <li><a href="#fields" data-tr="Çalışma Alanları" data-en="Fields">Fields</a></li>
+      <li><a href="#process" data-tr="Süreç" data-en="Process">Process</a></li>
+      <li><a href="#contact" data-tr="İletişim" data-en="Contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+905334879527" aria-label="Telefon">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+        <span>0533 487 95 27</span>
+      </a>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-tr="Teklif Al" data-en="Get a Quote">Get a Quote</button>
+      <div class="lang-toggle" role="group" aria-label="Dil seçimi">
+        <button class="lang-btn" onclick="goLang('tr')" aria-pressed="false">TR</button>
+        <button class="lang-btn active" onclick="goLang('en')" aria-pressed="true">EN</button>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menü" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <rect y="4" width="22" height="2" rx="1" fill="#1B4D2E"></rect>
+          <rect y="10" width="22" height="2" rx="1" fill="#1B4D2E"></rect>
+          <rect y="16" width="22" height="2" rx="1" fill="#1B4D2E"></rect>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobil menü">
+    <ul>
+      <li><a href="#services" onclick="toggleMenu()" data-tr="Hizmetler" data-en="Services">Services</a></li>
+      <li><a href="#fields" onclick="toggleMenu()" data-tr="Çalışma Alanları" data-en="Fields">Fields</a></li>
+      <li><a href="#process" onclick="toggleMenu()" data-tr="Süreç" data-en="Process">Process</a></li>
+      <li><a href="#contact" onclick="toggleMenu()" data-tr="İletişim" data-en="Contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn" onclick="goLang('tr')" aria-pressed="false">TR</button>
+        <button class="lang-btn active" onclick="goLang('en')" aria-pressed="true">EN</button>
+      </div>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'}); toggleMenu();" data-tr="Teklif Al" data-en="Get a Quote">Get a Quote</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section id="hero" aria-labelledby="hero-h1">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">
+          <span data-tr="Hacettepe Teknokent · Ankara" data-en="Hacettepe Technopolis · Ankara">Hacettepe Technopolis · Ankara</span>
+        </div>
+        <h1 class="hero-h1" id="hero-h1">
+          <span data-tr="İlaç, Kozmetik ve Tıbbi Cihaz için &lt;em&gt;Analitik Test&lt;/em&gt; &amp; Ar-Ge" data-en="Analytical Testing &amp; R&amp;D for &lt;em&gt;Pharma, Cosmetics&lt;/em&gt; &amp; Medical Devices">Analytical Testing &amp; R&amp;D for <em>Pharma, Cosmetics</em> &amp; Medical Devices</span>
+        </h1>
+        <p class="hero-sub">
+          <span data-tr="Formülasyon geliştirmeden ruhsatlandırmaya, entegre Ar-Ge ve analitik test hizmetleri." data-en="From formulation development to regulatory submission, integrated R&amp;D and analytical testing services.">From formulation development to regulatory submission, integrated R&amp;D and analytical testing services.</span>
+        </p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-tr="Teklif Alın" data-en="Request a Quote">Request a Quote</button>
+          <button class="btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" data-tr="Hizmetlerimizi Keşfedin" data-en="Explore Our Services">Explore Our Services</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">16</div>
+            <div class="hero-stat-lbl" data-tr="Hizmet Kategorisi" data-en="Service Categories">Service Categories</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">ICH</div>
+            <div class="hero-stat-lbl" data-tr="Q2(R2) Uyumlu Validasyon" data-en="Q2(R2) Compliant Validation">Q2(R2) Compliant Validation</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">EMA</div>
+            <div class="hero-stat-lbl" data-tr="Reflection Paper Kapsamı" data-en="Reflection Paper Coverage">Reflection Paper Coverage</div>
+          </div>
+        </div>
+      </div>
+      <!-- Büyük amblem arka plan -->
+      <div class="hero-emblem" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Sol tüp: sol üst → sağ alt -->
+          <g transform="rotate(40 50 50)">
+            <rect x="42" y="5" width="16" height="82" rx="8" fill="white" stroke="#1B4D2E" stroke-width="1.8"></rect>
+            <rect x="42" y="3" width="16" height="10" rx="5" fill="white" stroke="#1B4D2E" stroke-width="1.8"></rect>
+            <g transform="translate(50,28)" stroke="#1B4D2E" stroke-width="0.9" fill="none">
+              <line x1="0" y1="-8" x2="5" y2="-4"></line><line x1="5" y1="-4" x2="5" y2="2"></line>
+              <line x1="5" y1="2" x2="0" y2="6"></line><line x1="0" y1="6" x2="-5" y2="2"></line>
+              <line x1="-5" y1="2" x2="-5" y2="-4"></line><line x1="-5" y1="-4" x2="0" y2="-8"></line>
+              <line x1="0" y1="6" x2="0" y2="10"></line>
+              <circle cx="0" cy="13" r="2" stroke-width="0.9"></circle>
+            </g>
+            <g transform="translate(50,68)" stroke="#1B4D2E" stroke-width="0.9" fill="none">
+              <rect x="-5" y="2" width="10" height="6" rx="1"></rect>
+              <line x1="0" y1="2" x2="0" y2="-6"></line>
+              <rect x="-3" y="-8" width="6" height="3" rx="1"></rect>
+              <line x1="-6" y1="8" x2="6" y2="8"></line>
+            </g>
+          </g>
+          <!-- Sağ tüp: sağ üst → sol alt -->
+          <g transform="rotate(-40 50 50)">
+            <rect x="42" y="5" width="16" height="82" rx="8" fill="white" stroke="#1B4D2E" stroke-width="1.8"></rect>
+            <rect x="42" y="3" width="16" height="10" rx="5" fill="white" stroke="#1B4D2E" stroke-width="1.8"></rect>
+            <g transform="translate(50,28)" stroke="#1B4D2E" stroke-width="0.9" fill="none">
+              <rect x="-2" y="-10" width="4" height="10" rx="1"></rect>
+              <line x1="0" y1="0" x2="0" y2="6"></line>
+              <ellipse cx="0" cy="8" rx="1.5" ry="2"></ellipse>
+              <path d="M-5 12 Q-5 9 -2 9 L2 9 Q5 9 5 12 L6 20 Q6 23 0 23 Q-6 23 -6 20 Z"></path>
+            </g>
+            <g transform="translate(50,66)" stroke="#1B4D2E" stroke-width="0.9" fill="none">
+              <path d="M0 0 Q4 -8 2 -14"></path><path d="M0 0 Q-4 -6 -2 -12"></path>
+              <path d="M0 -4 Q5 -4 4 -10"></path>
+              <rect x="-5" y="2" width="10" height="7" rx="2"></rect>
+              <rect x="-4" y="0" width="8" height="3" rx="1"></rect>
+            </g>
+          </g>
+          <!-- Ortadaki yapraklar -->
+          <g transform="translate(50 50)">
+            <path d="M0 0 Q-10 -10 -4 -18 Q2 -10 0 0Z" fill="#1B4D2E" opacity="0.85"></path>
+            <path d="M0 0 Q8 -6 6 -16 Q0 -8 0 0Z" fill="#2D6A4F" opacity="0.75"></path>
+            <line x1="0" y1="0" x2="-2" y2="-17" stroke="#1B4D2E" stroke-width="0.7" opacity="0.6"></line>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<section id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-quote">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <path d="M6 24 Q4 18 9 12 Q13 7 18 8 Q14 13 15 18 Q16 22 20 23 Q17 28 12 27 Q8 26 6 24Z" fill="#1B4D2E" opacity="0.12"></path>
+          <path d="M20 24 Q18 18 23 12 Q27 7 32 8 Q28 13 29 18 Q30 22 34 23 Q31 28 26 27 Q22 26 20 24Z" fill="#1B4D2E" opacity="0.12"></path>
+        </svg>
+        <p class="about-text">
+          <span data-tr="Akademik bilgi birikimini endüstriyel ihtiyaçlarla buluşturmak için FourX Lab'ı kurduk." data-en="We founded FourX Lab to bridge academic expertise with industrial needs.">We founded FourX Lab to bridge academic expertise with industrial needs.</span>
+        </p>
+      </div>
+      <div class="about-pills">
+        <div class="about-pill">
+          <div class="about-pill-icon">🎓</div>
+          <div>
+            <div class="about-pill-title" data-tr="Akademik Köken" data-en="Academic Origin">Academic Origin</div>
+            <div class="about-pill-sub" data-tr="Kurucu ekip, akademik araştırma ve endüstriyel Ar-Ge deneyimini bir arada taşıyor." data-en="The founding team combines academic research and industrial R&amp;D experience.">The founding team combines academic research and industrial R&amp;D experience.</div>
+          </div>
+        </div>
+        <div class="about-pill">
+          <div class="about-pill-icon">⚗️</div>
+          <div>
+            <div class="about-pill-title" data-tr="Uzmanlık" data-en="Expertise">Expertise</div>
+            <div class="about-pill-sub" data-tr="Tüm kurucular eczacı." data-en="All founders are pharmacists.">All founders are pharmacists.</div>
+          </div>
+        </div>
+        <div class="about-pill">
+          <div class="about-pill-icon">📍</div>
+          <div>
+            <div class="about-pill-title" data-tr="Hacettepe Teknokent" data-en="Hacettepe Technopolis">Hacettepe Technopolis</div>
+            <div class="about-pill-sub" data-tr="Türkiye'nin önde gelen sağlık teknolojileri ekosistemi" data-en="Turkey's leading health technologies ecosystem">Turkey's leading health technologies ecosystem</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+<section id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="services-header">
+      <div class="section-eyebrow">
+        <span data-tr="Hizmetler" data-en="Services">Services</span>
+      </div>
+      <h2 class="section-title" id="services-title">
+        <span data-tr="Ruhsat Dosyanızın Her Aşamasında" data-en="At Every Stage of Your Dossier">At Every Stage of Your Dossier</span>
+      </h2>
+      <p class="section-sub">
+        <span data-tr="Farmasötik geliştirme sürecinin başından ruhsat başvurusuna kadar ihtiyaç duyulan analitik ve Ar-Ge hizmetlerini tek çatı altında sunuyoruz." data-en="We provide all the analytical and R&amp;D services needed from early pharmaceutical development through to regulatory submission under one roof.">We provide all the analytical and R&amp;D services needed from early pharmaceutical development through to regulatory submission under one roof.</span>
+      </p>
+    </div>
+    <div class="services-grid" id="services-grid"><div class="svc-card">
+      <div class="svc-icon">📐</div>
+      <div class="svc-title">Analytical Method Development &amp; Validation</div>
+      <div class="svc-desc">Method development, transfer and full validation per ICH Q2(R2). Linearity, precision, specificity, robustness and accuracy — complete validation package.</div>
+      <div class="svc-tags"><span class="svc-tag">ICH Q2(R2)</span><span class="svc-tag">HPLC</span><span class="svc-tag">UV-Vis</span><span class="svc-tag">Method transfer</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">🔬</div>
+      <div class="svc-title">Impurity Analyses</div>
+      <div class="svc-desc">Related impurities, degradation products and reaction monitoring. Impurity profiling and reporting at API and finished product level under ICH Q3A/Q3B.</div>
+      <div class="svc-tags"><span class="svc-tag">ICH Q3A/Q3B</span><span class="svc-tag">HPLC</span><span class="svc-tag">Degradation products</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">⚠️</div>
+      <div class="svc-title">Nitrosamine Impurities Analysis</div>
+      <div class="svc-desc">Nitrosamine risk assessment, determination and reporting under EMA/409815/2020 and ICH M7. LC-MS/MS analysis of NDMA, NDEA and other N-nitrosamine compounds. TİTCK-compliant format.</div>
+      <div class="svc-tags"><span class="svc-tag">ICH M7</span><span class="svc-tag">EMA</span><span class="svc-tag">NDMA</span><span class="svc-tag">LC-MS/MS</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">📊</div>
+      <div class="svc-title">Rheological Tests</div>
+      <div class="svc-desc">Viscosity profiles, flow curves and viscoelastic measurements (G'/G''). Comprehensive rheological characterization for semi-solid formulations; temperature sweep and thixotropy analyses.</div>
+      <div class="svc-tags"><span class="svc-tag">Viscosity</span><span class="svc-tag">G'/G''</span><span class="svc-tag">Semi-solid</span><span class="svc-tag">Thixotropy</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">🌡️</div>
+      <div class="svc-title">Stability Tests</div>
+      <div class="svc-desc">Real-time and accelerated stability studies under ICH Q1A(R2). Stress testing (thermal, hydrolytic, photolytic, oxidative), photostability (ICH Q1B) and freeze-thaw cycles.</div>
+      <div class="svc-tags"><span class="svc-tag">ICH Q1A(R2)</span><span class="svc-tag">ICH Q1B</span><span class="svc-tag">Accelerated</span><span class="svc-tag">Stress test</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">⚗️</div>
+      <div class="svc-title">Physicochemical Characterization</div>
+      <div class="svc-desc">Comprehensive particle and structural analysis by FTIR, UV-Vis, NMR, XRD, TEM/SEM and AFM.</div>
+      <div class="svc-tags"><span class="svc-tag">FTIR</span><span class="svc-tag">NMR</span><span class="svc-tag">XRD</span><span class="svc-tag">TEM/SEM</span><span class="svc-tag">AFM</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">🧪</div>
+      <div class="svc-title">In Vitro Release Test (IVRT) – In Vitro Permeation Test (IVPT)</div>
+      <div class="svc-desc">IVRT and IVPT studies with Franz diffusion cell for topical and dermal formulations. Evaluation of active substance release and permeation using synthetic and biological membranes.</div>
+      <div class="svc-tags"><span class="svc-tag">IVRT</span><span class="svc-tag">IVPT</span><span class="svc-tag">Franz cell</span><span class="svc-tag">Topical</span><span class="svc-tag">Dermal</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">🧴</div>
+      <div class="svc-title">Q3 Sameness (Microstructural &amp; Physicochemical Equivalence)</div>
+      <div class="svc-desc">Demonstration of Q3 microstructural sameness in dermal preparations under EMA topical generic guideline. Comparative rheology, particle size and morphology analyses.</div>
+      <div class="svc-tags"><span class="svc-tag">EMA Q3</span><span class="svc-tag">Topical generic</span><span class="svc-tag">Microstructure</span><span class="svc-tag">Equivalence</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">👃</div>
+      <div class="svc-title">Performance Tests for Nasal and Inhaler Preparations</div>
+      <div class="svc-desc">Particle/droplet size distribution, delivered dose uniformity, spray pattern and plume geometry tests for nasal spray and inhaler systems.</div>
+      <div class="svc-tags"><span class="svc-tag">Nasal spray</span><span class="svc-tag">Inhaler</span><span class="svc-tag">Dose uniformity</span><span class="svc-tag">Spray pattern</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">🏭</div>
+      <div class="svc-title">Formulation Development</div>
+      <div class="svc-desc">Preformulation studies, excipient selection and compatibility testing, CTD 3.2.P.2 compliant pharmaceutical development report.</div>
+      <div class="svc-tags"><span class="svc-tag">Preformulation</span><span class="svc-tag">CTD 3.2.P.2</span><span class="svc-tag">Compatibility</span><span class="svc-tag">Scale-up</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">💊</div>
+      <div class="svc-title">Physical and Quality Control Tests for Solid Dosage Forms</div>
+      <div class="svc-desc">Hardness, friability, disintegration, content uniformity and dissolution (including comparative dissolution) tests for tablets and capsules.</div>
+      <div class="svc-tags"><span class="svc-tag">Dissolution</span><span class="svc-tag">Comparative dissolution</span><span class="svc-tag">Hardness</span><span class="svc-tag">Content uniformity</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">🩺</div>
+      <div class="svc-title">Physical &amp; Chemical Characterization and Biocompatibility Tests for Medical Devices</div>
+      <div class="svc-desc">Physical, chemical characterization and biological evaluation of medical devices in accordance with ISO 10993 series and MDR/IVDR requirements. Consultancy in technical file preparation.</div>
+      <div class="svc-tags"><span class="svc-tag">ISO 10993</span><span class="svc-tag">MDR/IVDR</span><span class="svc-tag">BEP</span><span class="svc-tag">Chemical characterization</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">💄</div>
+      <div class="svc-title">Cosmetic Tests</div>
+      <div class="svc-desc">Cosmetic product formulation development, safety assessment (CPSR), stability, efficacy and microbiological tests. Consultancy in product information file (PIF) preparation under EU Cosmetics Regulation and TİTCK notification.</div>
+      <div class="svc-tags"><span class="svc-tag">CPSR</span><span class="svc-tag">EU Regulation</span><span class="svc-tag">TİTCK</span><span class="svc-tag">Stability</span><span class="svc-tag">PIF</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">🔭</div>
+      <div class="svc-title">Preclinical and Clinical Research</div>
+      <div class="svc-desc">Preclinical study design, protocol preparation and consultancy in clinical research processes. Study planning compliant with TİTCK and ICH E6(R2) GCP guidelines.</div>
+      <div class="svc-tags"><span class="svc-tag">Preclinical</span><span class="svc-tag">Clinical research</span><span class="svc-tag">GCP</span><span class="svc-tag">ICH E6(R2)</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">📑</div>
+      <div class="svc-title">Regulatory Services</div>
+      <div class="svc-desc">CTD Module 3 writing, regulatory strategy consulting, deficiency responses and technical report preparation for TİTCK and EMA submissions. New applications, variations and renewals.</div>
+      <div class="svc-tags"><span class="svc-tag">CTD Module 3</span><span class="svc-tag">TİTCK</span><span class="svc-tag">EMA</span><span class="svc-tag">Variation</span><span class="svc-tag">Deficiency response</span></div>
+    </div><div class="svc-card">
+      <div class="svc-icon">🎓</div>
+      <div class="svc-title">Training Services</div>
+      <div class="svc-desc">Industry-focused training programmes on pharmaceutical technology, analytical validation, stability, CTD Module 3 writing and regulatory affairs. Practice-oriented content backed by academic expertise.</div>
+      <div class="svc-tags"><span class="svc-tag">Training</span><span class="svc-tag">CTD</span><span class="svc-tag">Validation</span><span class="svc-tag">Regulatory affairs</span></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FIELDS ═══════════════════════════════ -->
+<section id="fields" aria-labelledby="fields-title">
+  <div class="container">
+    <div class="section-eyebrow">
+      <span data-tr="Çalışma Alanları" data-en="Fields">Fields</span>
+    </div>
+    <h2 class="section-title" id="fields-title">
+      <span data-tr="Hangi Ürünler İçin Çalışıyoruz?" data-en="Which Products Do We Work With?">Which Products Do We Work With?</span>
+    </h2>
+    <p class="section-sub">
+      <span data-tr="İlaç, kozmetik, tıbbi cihaz, gıda takviyesi, nanoteknolojik ve biyoteknolojik ürünler alanında faaliyet gösteren firmalara hizmet veriyoruz." data-en="We serve companies operating in pharmaceutical, cosmetic, medical device, food supplement, nanotechnology and biotechnology product sectors.">We serve companies operating in pharmaceutical, cosmetic, medical device, food supplement, nanotechnology and biotechnology product sectors.</span>
+    </p>
+    <div class="fields-grid" id="fields-grid"><div class="field-pill">
+      <div class="field-pill-icon">💊</div>
+      <div class="field-pill-title">Pharmaceuticals</div>
+      <div class="field-pill-sub">Solid, semi-solid, liquid and parenteral dosage forms</div>
+    </div><div class="field-pill">
+      <div class="field-pill-icon">💄</div>
+      <div class="field-pill-title">Cosmetics</div>
+      <div class="field-pill-sub">Accredited testing and analysis for cosmetic product development, R&amp;D and quality control; regulatory compliance support.</div>
+    </div><div class="field-pill">
+      <div class="field-pill-icon">🩺</div>
+      <div class="field-pill-title">Medical Devices</div>
+      <div class="field-pill-sub">Biocompatibility, chemical characterization and technical file support under MDR/IVDR for Class I–III devices</div>
+    </div><div class="field-pill">
+      <div class="field-pill-icon">🌿</div>
+      <div class="field-pill-title">Food Supplements</div>
+      <div class="field-pill-sub">Food supplement analyses and formulation development</div>
+    </div><div class="field-pill">
+      <div class="field-pill-icon">🧪</div>
+      <div class="field-pill-title">Biocides</div>
+      <div class="field-pill-sub">Disinfectants, antiseptics and preservative products; efficacy, stability and characterization</div>
+    </div><div class="field-pill">
+      <div class="field-pill-icon">🔬</div>
+      <div class="field-pill-title">Nanotechnology &amp; Biotechnology Products</div>
+      <div class="field-pill-sub">Characterization, analytical method development and R&amp;D for nanotechnology and biotechnology products.</div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ WHY ═══════════════════════════════ -->
+<section id="why" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-eyebrow">
+      <span data-tr="Neden FourX Lab?" data-en="Why FourX Lab?">Why FourX Lab?</span>
+    </div>
+    <h2 class="section-title" id="why-title">
+      <span data-tr="Bizi Tercih Etmeniz İçin Nedenler" data-en="Reasons to Choose Us">Reasons to Choose Us</span>
+    </h2>
+    <p class="section-sub" style="margin-bottom:40px">
+      <span data-tr="Akademik kökenli, endüstriye dönük bir laboratuvar." data-en="An academically rooted laboratory, oriented towards industry.">An academically rooted laboratory, oriented towards industry.</span>
+    </p>
+    <div class="why-grid" id="why-grid"><div class="why-card">
+      <div class="why-num">01</div>
+      <div class="why-title">Regulatory Authority Compliance</div>
+      <div class="why-desc">Every test is designed to meet TİTCK, EMA and FDA requirements from the start.</div>
+    </div><div class="why-card">
+      <div class="why-num">02</div>
+      <div class="why-title">Expert Team</div>
+      <div class="why-desc">All founding members are pharmacists with experience in academic research, R&amp;D and industrial regulatory processes.</div>
+    </div><div class="why-card">
+      <div class="why-num">03</div>
+      <div class="why-title">Hacettepe Technopolis</div>
+      <div class="why-desc">Located in Turkey's leading university technopolis, providing direct access to an innovative R&amp;D environment and academic collaborations.</div>
+    </div><div class="why-card">
+      <div class="why-num">04</div>
+      <div class="why-title">Transparency</div>
+      <div class="why-desc">Clear communication, defined scope and regular updates are provided from the quotation stage through to final reporting.</div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ PROCESS ═══════════════════════════════ -->
+<section id="process" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-eyebrow">
+      <span data-tr="Çalışma Süreci" data-en="Our Process">Our Process</span>
+    </div>
+    <h2 class="section-title" id="process-title">
+      <span data-tr="Başvurudan Rapora, Şeffaf Süreç" data-en="From Inquiry to Report, a Transparent Process">From Inquiry to Report, a Transparent Process</span>
+    </h2>
+    <p class="section-sub">
+      <span data-tr="Her projeyi yapılandırılmış, öngörülebilir ve şeffaf bir süreçle yönetiyoruz." data-en="We manage every project with a structured, predictable and transparent process.">We manage every project with a structured, predictable and transparent process.</span>
+    </p>
+    <div class="steps" id="steps-grid"><div class="step">
+      <div class="step-num">01</div>
+      <div>
+        <div class="step-title">Initial Consultation</div>
+        <div class="step-desc">We assess your needs and the current stage of your project together.</div>
+      </div>
+    </div><div class="step">
+      <div class="step-num">02</div>
+      <div>
+        <div class="step-title">Quote &amp; Scope</div>
+        <div class="step-desc">We prepare a comprehensive and detailed quote tailored to your project needs.</div>
+      </div>
+    </div><div class="step">
+      <div class="step-num">03</div>
+      <div>
+        <div class="step-title">Testing &amp; Analysis</div>
+        <div class="step-desc">Work begins according to the agreed protocol with interim updates.</div>
+      </div>
+    </div><div class="step">
+      <div class="step-num">04</div>
+      <div>
+        <div class="step-title">Report &amp; Delivery</div>
+        <div class="step-desc">CTD-compliant technical report and raw data delivered within agreed timelines.</div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-eyebrow">
+      <span data-tr="İletişim" data-en="Contact">Contact</span>
+    </div>
+    <h2 class="section-title" id="contact-title">
+      <span data-tr="Projenizi Birlikte Değerlendirelim" data-en="Let's Evaluate Your Project Together">Let's Evaluate Your Project Together</span>
+    </h2>
+    <p class="section-sub">
+      <span data-tr="İhtiyaçlarınızı paylaşın, size özel bir teklif hazırlayalım." data-en="Share your needs and we'll prepare a tailored proposal.">Share your needs and we'll prepare a tailored proposal.</span>
+    </p>
+    <div class="contact-grid">
+      <div class="contact-info-block">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <div class="contact-info-label" data-tr="Adres" data-en="Address">Address</div>
+            <div class="contact-info-val">Hacettepe Teknokent<br>Üniversiteler Mah. 1596 Cad. No: 6/E<br>Çankaya / Ankara</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <div class="contact-info-label" data-tr="Telefon" data-en="Phone">Phone</div>
+            <div class="contact-info-val"><a href="tel:+905334879527" style="color:inherit;text-decoration:none;">0533 487 95 27</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">✉️</div>
+          <div>
+            <div class="contact-info-label" data-tr="E-posta" data-en="E-mail">E-mail</div>
+            <div class="contact-info-val"><a href="mailto:info@fourxlab.com" style="color:inherit;text-decoration:none;">info@fourxlab.com</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🕐</div>
+          <div>
+            <div class="contact-info-label" data-tr="Yanıt Süresi" data-en="Response Time">Response Time</div>
+            <div class="contact-info-val" data-tr="İş günü içinde 24 saat" data-en="Within 24 business hours">Within 24 business hours</div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-tr="Ad Soyad" data-en="Full Name">Full Name</label>
+            <input type="text" id="f-name" required="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label data-tr="Kurum / Firma" data-en="Organization">Organization</label>
+            <input type="text" id="f-org" required="" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-tr="E-posta" data-en="Email">Email</label>
+          <input type="email" id="f-email" required="" placeholder="">
+        </div>
+        <div class="form-group">
+          <label data-tr="Hizmet Alanı" data-en="Service Area">Service Area</label>
+          <select id="svc-select">
+            <option data-tr="Seçiniz..." data-en="Select...">Select...</option>
+            <option data-tr="Analitik Metot Geliştirme ve Validasyon" data-en="Analytical Method Development &amp; Validation">Analytical Method Development &amp; Validation</option>
+            <option data-tr="Safsızlık Analizleri" data-en="Impurity Analyses">Impurity Analyses</option>
+            <option data-tr="Nitrözamin Safsızlıkları Analizi" data-en="Nitrosamine Impurities Analysis">Nitrosamine Impurities Analysis</option>
+            <option data-tr="Reolojik Testler" data-en="Rheological Tests">Rheological Tests</option>
+            <option data-tr="Stabilite Testleri" data-en="Stability Tests">Stability Tests</option>
+            <option data-tr="Fizikokimyasal Karakterizasyon" data-en="Physicochemical Characterization">Physicochemical Characterization</option>
+            <option data-tr="İn Vitro Salım Testi (IVRT) – İn Vitro Permeasyon Testi (IVPT)" data-en="In Vitro Release Test (IVRT) – In Vitro Permeation Test (IVPT)">In Vitro Release Test (IVRT) – In Vitro Permeation Test (IVPT)</option>
+            <option data-tr="Q3 Benzerliği (Mikroyapısal ve Fizikokimyasal Eşdeğerlik)" data-en="Q3 Sameness (Microstructural &amp; Physicochemical Equivalence)">Q3 Sameness (Microstructural &amp; Physicochemical Equivalence)</option>
+            <option data-tr="Nazal ve İnhaler Preparatlarda Performans Testleri" data-en="Performance Tests for Nasal and Inhaler Preparations">Performance Tests for Nasal and Inhaler Preparations</option>
+            <option data-tr="Formülasyon Geliştirme" data-en="Formulation Development">Formulation Development</option>
+            <option data-tr="Katı Dozaj Şekillerinde Fiziksel ve Kalite Kontrol Testleri" data-en="Physical and Quality Control Tests for Solid Dosage Forms">Physical and Quality Control Tests for Solid Dosage Forms</option>
+            <option data-tr="Tıbbi Cihazların Biyouyumluluk Testleri" data-en="Biocompatibility Tests for Medical Devices">Biocompatibility Tests for Medical Devices</option>
+            <option data-tr="Kozmetik Testleri" data-en="Cosmetic Tests">Cosmetic Tests</option>
+            <option data-tr="Preklinik ve Klinik Araştırmalar" data-en="Preclinical and Clinical Research">Preclinical and Clinical Research</option>
+            <option data-tr="Ruhsatlandırma Hizmetleri" data-en="Regulatory Services">Regulatory Services</option>
+            <option data-tr="Eğitim Hizmetleri" data-en="Training Services">Training Services</option>
+            <option data-tr="Diğer" data-en="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-tr="Projenizi kısaca açıklayın" data-en="Brief project description">Brief project description</label>
+          <textarea id="f-msg" placeholder=""></textarea>
+        </div>
+        <input type="checkbox" id="f-botcheck" tabindex="-1" autocomplete="off" style="display:none">
+        <button type="submit" class="form-submit" data-tr="Teklif Talep Et →" data-en="Request Quote →">Request Quote →</button>
+        <div class="form-success" id="form-success"><span></span></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px;" aria-hidden="true">
+            <g transform="rotate(-40, 40, 40)">
+              <rect x="37" y="8" width="9" height="44" rx="4.5" stroke="#C8A951" stroke-width="2" fill="rgba(200,169,81,0.08)"></rect>
+              <rect x="37" y="6" width="9" height="7" rx="3" stroke="#C8A951" stroke-width="2" fill="none"></rect>
+            </g>
+            <g transform="rotate(40, 40, 40)">
+              <rect x="34" y="8" width="9" height="44" rx="4.5" stroke="#fff" stroke-width="2" fill="rgba(255,255,255,0.06)"></rect>
+              <rect x="34" y="6" width="9" height="7" rx="3" stroke="#fff" stroke-width="2" fill="none"></rect>
+            </g>
+            <ellipse cx="40" cy="42" rx="5" ry="8" fill="rgba(200,169,81,0.6)" transform="rotate(-15, 40, 42)"></ellipse>
+            <line x1="40" y1="34" x2="40" y2="50" stroke="#C8A951" stroke-width="1" opacity="0.7"></line>
+          </svg>
+          <div class="nav-wordmark">
+            <span class="nav-wordmark-top">FourX</span>
+            <span class="nav-wordmark-lab">lab</span>
+          </div>
+        </div>
+        <p data-tr="Analitik test ve Ar-Ge hizmetleri." data-en="Analytical testing and R&amp;D services.">Analytical testing and R&amp;D services.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4 data-tr="Kurumsal" data-en="Company">Company</h4>
+        <ul>
+          <li><a href="#services" data-tr="Hizmetler" data-en="Services">Services</a></li>
+          <li><a href="#fields" data-tr="Çalışma Alanları" data-en="Fields">Fields</a></li>
+          <li><a href="#why" data-tr="Hakkımızda" data-en="About Us">About Us</a></li>
+          <li><a href="#process" data-tr="Süreç" data-en="Process">Process</a></li>
+          <li><a href="#contact" data-tr="İletişim" data-en="Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FOURX LABORATUVAR ARGE ANALİZ VE TEST HİZMETLERİ LİMİTED ŞİRKETİ</p>
+      <p data-tr="Hacettepe Teknokent · Ankara" data-en="Hacettepe Technopolis · Ankara">Hacettepe Technopolis · Ankara</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scroll-top" aria-label="Yukarı çık" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+/* ── DATA ─────────────────────────────────────────────── */
+const SERVICES = [
+  {
+    icon: '📐',
+    tr: { title: 'Analitik Metot Geliştirme ve Validasyon', desc: 'ICH Q2(R2) kılavuzuna uygun metot geliştirme, transfer ve validasyon. Doğrusallık, hassasiyet, özgüllük, sağlamlık ve kesinlik parametreleri ile tam validasyon paketi.', tags: ['ICH Q2(R2)', 'HPLC', 'UV-Vis', 'Metot transferi'] },
+    en: { title: 'Analytical Method Development & Validation', desc: 'Method development, transfer and full validation per ICH Q2(R2). Linearity, precision, specificity, robustness and accuracy — complete validation package.', tags: ['ICH Q2(R2)', 'HPLC', 'UV-Vis', 'Method transfer'] }
+  },
+  {
+    icon: '🔬',
+    tr: { title: 'Safsızlık Analizleri', desc: 'İlgili safsızlıklar, bozunma ürünleri ve reaksiyon izleme. ICH Q3A/Q3B kapsamında etkin madde ve bitmiş ürün düzeyinde safsızlık profili oluşturma ve raporlama.', tags: ['ICH Q3A/Q3B', 'HPLC', 'Bozunma ürünleri'] },
+    en: { title: 'Impurity Analyses', desc: 'Related impurities, degradation products and reaction monitoring. Impurity profiling and reporting at API and finished product level under ICH Q3A/Q3B.', tags: ['ICH Q3A/Q3B', 'HPLC', 'Degradation products'] }
+  },
+  {
+    icon: '⚠️',
+    tr: { title: 'Nitrözamin Safsızlıkları Analizi', desc: 'EMA/409815/2020 ve ICH M7 kapsamında nitrözamin risk değerlendirmesi, tayin ve raporlama. NDMA, NDEA ve diğer N-nitrözamin bileşiklerinin LC-MS/MS ile analizi. TİTCK başvurularına uygun format.', tags: ['ICH M7', 'EMA', 'NDMA', 'LC-MS/MS'] },
+    en: { title: 'Nitrosamine Impurities Analysis', desc: 'Nitrosamine risk assessment, determination and reporting under EMA/409815/2020 and ICH M7. LC-MS/MS analysis of NDMA, NDEA and other N-nitrosamine compounds. TİTCK-compliant format.', tags: ['ICH M7', 'EMA', 'NDMA', 'LC-MS/MS'] }
+  },
+  {
+    icon: '📊',
+    tr: { title: 'Reolojik Testler', desc: 'Viskozite profili, akış eğrisi ve viskoelastik ölçümler (G\'/G\'\'). Yarı-katı formülasyonlar için kapsamlı reolojik karakterizasyon; sıcaklık taraması ve tiksotropi analizleri.', tags: ['Viskozite', 'G\'/G\'\'', 'Yarı-katı', 'Tiksotropi'] },
+    en: { title: 'Rheological Tests', desc: 'Viscosity profiles, flow curves and viscoelastic measurements (G\'/G\'\'). Comprehensive rheological characterization for semi-solid formulations; temperature sweep and thixotropy analyses.', tags: ['Viscosity', 'G\'/G\'\'', 'Semi-solid', 'Thixotropy'] }
+  },
+  {
+    icon: '🌡️',
+    tr: { title: 'Stabilite Testleri', desc: 'ICH Q1A(R2) kapsamında gerçek zamanlı ve hızlandırılmış stabilite çalışmaları. Stres testleri (termal, hidroliz, fotoliz, oksidasyon), fotostabilite (ICH Q1B) ve donma-çözme döngüleri.', tags: ['ICH Q1A(R2)', 'ICH Q1B', 'Hızlandırılmış', 'Stres testi'] },
+    en: { title: 'Stability Tests', desc: 'Real-time and accelerated stability studies under ICH Q1A(R2). Stress testing (thermal, hydrolytic, photolytic, oxidative), photostability (ICH Q1B) and freeze-thaw cycles.', tags: ['ICH Q1A(R2)', 'ICH Q1B', 'Accelerated', 'Stress test'] }
+  },
+  {
+    icon: '⚗️',
+    tr: { title: 'Fizikokimyasal Karakterizasyon', desc: 'FTIR, UV-Vis, NMR, XRD, TEM/SEM ve AFM ile kapsamlı partikül ve yapısal analiz.', tags: ['FTIR', 'NMR', 'XRD', 'TEM/SEM', 'AFM'] },
+    en: { title: 'Physicochemical Characterization', desc: 'Comprehensive particle and structural analysis by FTIR, UV-Vis, NMR, XRD, TEM/SEM and AFM.', tags: ['FTIR', 'NMR', 'XRD', 'TEM/SEM', 'AFM'] }
+  },
+  {
+    icon: '🧪',
+    tr: { title: 'İn Vitro Salım Testi (IVRT) – İn Vitro Permeasyon Testi (IVPT)', desc: 'Topikal ve dermal formülasyonlar için Franz difüzyon hücresi ile IVRT ve IVPT çalışmaları. Sentetik ve biyolojik membranlar kullanılarak etkin madde salımı ve permeasyonunun değerlendirilmesi.', tags: ['IVRT', 'IVPT', 'Franz hücresi', 'Topikal', 'Dermal'] },
+    en: { title: 'In Vitro Release Test (IVRT) – In Vitro Permeation Test (IVPT)', desc: 'IVRT and IVPT studies with Franz diffusion cell for topical and dermal formulations. Evaluation of active substance release and permeation using synthetic and biological membranes.', tags: ['IVRT', 'IVPT', 'Franz cell', 'Topical', 'Dermal'] }
+  },
+  {
+    icon: '🧴',
+    tr: { title: 'Q3 Benzerliği (Mikroyapısal ve Fizikokimyasal Eşdeğerlik)', desc: 'Topikal jenerik ürünler için EMA kılavuzu kapsamında dermal preparatlarda Q3 mikroyapı benzerliğinin gösterilmesi. Karşılaştırmalı reoloji, partikül boyutu ve morfoloji analizleri.', tags: ['EMA Q3', 'Topikal jenerik', 'Mikroyapı', 'Eşdeğerlik'] },
+    en: { title: 'Q3 Sameness (Microstructural & Physicochemical Equivalence)', desc: 'Demonstration of Q3 microstructural sameness in dermal preparations under EMA topical generic guideline. Comparative rheology, particle size and morphology analyses.', tags: ['EMA Q3', 'Topical generic', 'Microstructure', 'Equivalence'] }
+  },
+  {
+    icon: '👃',
+    tr: { title: 'Nazal ve İnhaler Preparatlarda Performans Testleri', desc: 'Nazal sprey ve inhaler sistemleri için partikül/damlacık büyüklüğü dağılımı, taşınan doz tekdüzeliği, sprey patern ve bulut geometrisi testleri.', tags: ['Nazal sprey', 'İnhaler', 'Doz tekdüzeliği', 'Sprey patern'] },
+    en: { title: 'Performance Tests for Nasal and Inhaler Preparations', desc: 'Particle/droplet size distribution, delivered dose uniformity, spray pattern and plume geometry tests for nasal spray and inhaler systems.', tags: ['Nasal spray', 'Inhaler', 'Dose uniformity', 'Spray pattern'] }
+  },
+  {
+    icon: '🏭',
+    tr: { title: 'Formülasyon Geliştirme', desc: 'Ön formülasyon çalışmaları, eksipiyan seçimi ve geçimlilik testleri, CTD 3.2.P.2 uyumlu farmasötik geliştirme raporu.', tags: ['Ön-formülasyon', 'CTD 3.2.P.2', 'Geçimlilik', 'Ölçek büyütme'] },
+    en: { title: 'Formulation Development', desc: 'Preformulation studies, excipient selection and compatibility testing, CTD 3.2.P.2 compliant pharmaceutical development report.', tags: ['Preformulation', 'CTD 3.2.P.2', 'Compatibility', 'Scale-up'] }
+  },
+  {
+    icon: '💊',
+    tr: { title: 'Katı Dozaj Şekillerinde Fiziksel ve Kalite Kontrol Testleri', desc: 'Tablet ve kapsüller için sertlik, frijabilite, dağılma, içerik tekdüzeliği ve dissolüsyon (karşılaştırmalı dissolüsyon dahil) testleri.', tags: ['Dissolüsyon', 'Karşılaştırmalı dissolüsyon', 'Sertlik', 'İçerik tekdüzeliği'] },
+    en: { title: 'Physical and Quality Control Tests for Solid Dosage Forms', desc: 'Hardness, friability, disintegration, content uniformity and dissolution (including comparative dissolution) tests for tablets and capsules.', tags: ['Dissolution', 'Comparative dissolution', 'Hardness', 'Content uniformity'] }
+  },
+  {
+    icon: '🩺',
+    tr: { title: 'Tıbbi Cihazların Fiziksel, Kimyasal Karakterizasyonu ve Biyouyumluluk Testleri', desc: 'ISO 10993 serisi ve MDR/IVDR gereklilikleri doğrultusunda tıbbi cihazlarda fiziksel, kimyasal karakterizasyon ve biyolojik değerlendirme. Teknik dosya hazırlığında danışmanlık.', tags: ['ISO 10993', 'MDR/IVDR', 'BEP', 'Kimyasal karakterizasyon'] },
+    en: { title: 'Physical & Chemical Characterization and Biocompatibility Tests for Medical Devices', desc: 'Physical, chemical characterization and biological evaluation of medical devices in accordance with ISO 10993 series and MDR/IVDR requirements. Consultancy in technical file preparation.', tags: ['ISO 10993', 'MDR/IVDR', 'BEP', 'Chemical characterization'] }
+  },
+  {
+    icon: '💄',
+    tr: { title: 'Kozmetik Testleri', desc: 'Kozmetik ürün formülasyonu geliştirme, güvenlilik değerlendirmesi (CPSR), stabilite, etkinlik ve mikrobiyolojik testler. AB Kozmetik Tüzüğü ve TİTCK bildirimi kapsamında teknik dosya (PIF) hazırlığında danışmanlık.', tags: ['CPSR', 'AB Tüzüğü', 'TİTCK', 'Stabilite', 'PIF'] },
+    en: { title: 'Cosmetic Tests', desc: 'Cosmetic product formulation development, safety assessment (CPSR), stability, efficacy and microbiological tests. Consultancy in product information file (PIF) preparation under EU Cosmetics Regulation and TİTCK notification.', tags: ['CPSR', 'EU Regulation', 'TİTCK', 'Stability', 'PIF'] }
+  },
+  {
+    icon: '🔭',
+    tr: { title: 'Preklinik ve Klinik Araştırmalar', desc: 'Preklinik çalışma tasarımı, protokol hazırlığı ve klinik araştırma süreçlerinde danışmanlık. TİTCK ve ICH E6(R2) GCP kılavuzlarına uygun çalışma planlaması.', tags: ['Preklinik', 'Klinik araştırma', 'GCP', 'ICH E6(R2)'] },
+    en: { title: 'Preclinical and Clinical Research', desc: 'Preclinical study design, protocol preparation and consultancy in clinical research processes. Study planning compliant with TİTCK and ICH E6(R2) GCP guidelines.', tags: ['Preclinical', 'Clinical research', 'GCP', 'ICH E6(R2)'] }
+  },
+  {
+    icon: '📑',
+    tr: { title: 'Ruhsatlandırma Hizmetleri', desc: 'TİTCK ve EMA başvuruları için CTD Modül 3 yazımı, düzenleyici strateji danışmanlığı, eksiklik yanıtı ve teknik rapor hazırlığı. Yeni ruhsat, varyasyon ve yenileme başvuruları.', tags: ['CTD Modül 3', 'TİTCK', 'EMA', 'Varyasyon', 'Eksiklik yanıtı'] },
+    en: { title: 'Regulatory Services', desc: 'CTD Module 3 writing, regulatory strategy consulting, deficiency responses and technical report preparation for TİTCK and EMA submissions. New applications, variations and renewals.', tags: ['CTD Module 3', 'TİTCK', 'EMA', 'Variation', 'Deficiency response'] }
+  },
+  {
+    icon: '🎓',
+    tr: { title: 'Eğitim Hizmetleri', desc: 'İlaç teknolojisi, analitik validasyon, stabilite, CTD Modül 3 yazımı ve düzenleyici mevzuat konularında sektöre yönelik eğitim programları. Akademik altyapıyla desteklenen, uygulamaya yönelik içerik.', tags: ['Eğitim', 'CTD', 'Validasyon', 'Düzenleyici mevzuat'] },
+    en: { title: 'Training Services', desc: 'Industry-focused training programmes on pharmaceutical technology, analytical validation, stability, CTD Module 3 writing and regulatory affairs. Practice-oriented content backed by academic expertise.', tags: ['Training', 'CTD', 'Validation', 'Regulatory affairs'] }
+  },
+];
+
+const FIELDS = [
+  { icon: '💊', tr: { t: 'İlaç', s: 'Katı, yarı-katı, sıvı ve parenteral dozaj şekilleri' }, en: { t: 'Pharmaceuticals', s: 'Solid, semi-solid, liquid and parenteral dosage forms' } },
+  { icon: '💄', tr: { t: 'Kozmetik', s: 'Kozmetik ürün geliştirme, Ar-Ge ve kalite kontrol süreçlerinde akredite test ve analiz; yasal mevzuata uyum desteği.' }, en: { t: 'Cosmetics', s: 'Accredited testing and analysis for cosmetic product development, R&D and quality control; regulatory compliance support.' } },
+  { icon: '🩺', tr: { t: 'Tıbbi Cihaz', s: 'Sınıf I–III MDR/IVDR kapsamında biyouyumluluk, kimyasal karakterizasyon ve teknik dosya desteği' }, en: { t: 'Medical Devices', s: 'Biocompatibility, chemical characterization and technical file support under MDR/IVDR for Class I–III devices' } },
+  { icon: '🌿', tr: { t: 'Gıda Takviyesi', s: 'Takviye edici gıda analizleri ve formülasyon geliştirme' }, en: { t: 'Food Supplements', s: 'Food supplement analyses and formulation development' } },
+  { icon: '🧪', tr: { t: 'Biyosidal', s: 'Dezenfektan, antiseptik ve koruyucu ürünler; etkinlik, stabilite ve karakterizasyon' }, en: { t: 'Biocides', s: 'Disinfectants, antiseptics and preservative products; efficacy, stability and characterization' } },
+  { icon: '🔬', tr: { t: 'Nanoteknolojik ve Biyoteknolojik Ürünler', s: 'Nanoteknolojik ve biyoteknolojik ürünlerde karakterizasyon, analitik yöntem geliştirme ve Ar-Ge.' }, en: { t: 'Nanotechnology & Biotechnology Products', s: 'Characterization, analytical method development and R&D for nanotechnology and biotechnology products.' } },
+];
+
+const WHY = [
+  { num: '01', tr: { t: 'Düzenleyici Otoritelere Uygunluk', d: 'Her test, TİTCK, EMA ve FDA gerekliliklerini karşılayacak şekilde planlanır.' }, en: { t: 'Regulatory Authority Compliance', d: 'Every test is designed to meet TİTCK, EMA and FDA requirements from the start.' } },
+  { num: '02', tr: { t: 'Uzman Ekip', d: 'Kurucu ekibin tamamı eczacı olup akademik araştırma, Ar-Ge ve endüstriyel ruhsat süreçlerinde deneyim sahibidir.' }, en: { t: 'Expert Team', d: 'All founding members are pharmacists with experience in academic research, R&D and industrial regulatory processes.' } },
+  { num: '03', tr: { t: 'Hacettepe Teknokent', d: 'Türkiye\'nin önde gelen üniversite teknoparkında konumlanma, yenilikçi Ar-Ge ortamına ve akademik işbirliklerine doğrudan erişim sağlar.' }, en: { t: 'Hacettepe Technopolis', d: 'Located in Turkey\'s leading university technopolis, providing direct access to an innovative R&D environment and academic collaborations.' } },
+  { num: '04', tr: { t: 'Şeffaflık', d: 'Teklif aşamasından raporlamaya kadar açık iletişim, net kapsam ve düzenli bilgilendirme sağlanır.' }, en: { t: 'Transparency', d: 'Clear communication, defined scope and regular updates are provided from the quotation stage through to final reporting.' } },
+];
+
+const STEPS = [
+  { tr: { t: 'Ön Görüşme', d: 'İhtiyaçlarınızı ve projenizin mevcut aşamasını birlikte değerlendiririz.' }, en: { t: 'Initial Consultation', d: 'We assess your needs and the current stage of your project together.' } },
+  { tr: { t: 'Teklif & Kapsam', d: 'Projenizin ihtiyaçlarına göre detaylı teklif hazırlıyoruz.' }, en: { t: 'Quote & Scope', d: 'We prepare a comprehensive and detailed quote tailored to your project needs.' } },
+  { tr: { t: 'Test & Analiz', d: 'Belirlenen protokole göre çalışmalar başlar; süreç boyunca düzenli olarak bilgilendirme yapılır.' }, en: { t: 'Testing & Analysis', d: 'Work begins according to the agreed protocol with interim updates.' } },
+  { tr: { t: 'Rapor & Teslim', d: 'CTD uyumlu teknik rapor ve ham veriler, belirlenen sürede teslim edilir.' }, en: { t: 'Report & Delivery', d: 'CTD-compliant technical report and raw data delivered within agreed timelines.' } },
+];
+
+/* ── RENDER ────────────────────────────────────────────── */
+let lang = 'en';
+
+function renderServices() {
+  const g = document.getElementById('services-grid');
+  g.innerHTML = SERVICES.map(s => {
+    const d = s[lang];
+    return `<div class="svc-card">
+      <div class="svc-icon">${s.icon}</div>
+      <div class="svc-title">${d.title}</div>
+      <div class="svc-desc">${d.desc}</div>
+      <div class="svc-tags">${d.tags.map(t => `<span class="svc-tag">${t}</span>`).join('')}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderFields() {
+  const g = document.getElementById('fields-grid');
+  g.innerHTML = FIELDS.map(f => {
+    const d = f[lang];
+    return `<div class="field-pill">
+      <div class="field-pill-icon">${f.icon}</div>
+      <div class="field-pill-title">${d.t}</div>
+      <div class="field-pill-sub">${d.s}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderWhy() {
+  const g = document.getElementById('why-grid');
+  g.innerHTML = WHY.map(w => {
+    const d = w[lang];
+    return `<div class="why-card">
+      <div class="why-num">${w.num}</div>
+      <div class="why-title">${d.t}</div>
+      <div class="why-desc">${d.d}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderSteps() {
+  const g = document.getElementById('steps-grid');
+  g.innerHTML = STEPS.map((s, i) => {
+    const d = s[lang];
+    return `<div class="step">
+      <div class="step-num">${String(i+1).padStart(2,'0')}</div>
+      <div>
+        <div class="step-title">${d.t}</div>
+        <div class="step-desc">${d.d}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function applyLangAttrs() {
+  document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (el.tagName === 'OPTION') {
+      el.textContent = val;
+    } else if (el.innerHTML !== undefined && val.includes('<')) {
+      el.innerHTML = val;
+    } else {
+      el.textContent = val;
+    }
+  });
+  // Select options
+  const sel = document.getElementById('svc-select');
+  if (sel) {
+    sel.querySelectorAll('option').forEach(opt => {
+      const v = opt.getAttribute('data-' + lang);
+      if (v) opt.textContent = v;
+    });
+  }
+}
+
+function goLang(l) {
+  window.location.href = l === 'en' ? '/en/' : '/';
+}
+
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.textContent === l.toUpperCase());
+    b.setAttribute('aria-pressed', b.textContent === l.toUpperCase() ? 'true' : 'false');
+  });
+  renderServices();
+  renderFields();
+  renderWhy();
+  renderSteps();
+  applyLangAttrs();
+}
+
+function toggleMenu() {
+  const m = document.getElementById('mobile-menu');
+  const btn = document.querySelector('.nav-hamburger');
+  const isOpen = m.classList.toggle('open');
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+
+const WEB3FORMS_KEY = '7f0df0ed-cd18-43c9-9aa9-d7a1550af42c';
+const FORM_MSG = {
+  ok:  { tr: '✓ Talebiniz alındı. En kısa sürede size dönüş yapacağız.', en: "✓ Your request has been received. We'll be in touch shortly." },
+  err: { tr: 'Gönderilemedi. Lütfen tekrar deneyin veya info@fourxlab.com adresine yazın.', en: 'Could not send. Please try again or write to info@fourxlab.com.' }
+};
+
+function showFormStatus(kind) {
+  const box = document.getElementById('form-success');
+  const span = box.querySelector('span');
+  span.setAttribute('data-tr', FORM_MSG[kind].tr);
+  span.setAttribute('data-en', FORM_MSG[kind].en);
+  box.classList.toggle('error', kind === 'err');
+  box.classList.add('show');
+  applyLangAttrs();
+}
+
+async function submitForm(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button[type=submit]');
+  const sel = document.getElementById('svc-select');
+  const name = document.getElementById('f-name').value.trim();
+  btn.disabled = true;
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: 'FourX Lab - Teklif Talebi / Quote Request: ' + name,
+        from_name: 'FourX Lab Website',
+        name: name,
+        email: document.getElementById('f-email').value.trim(),
+        organization: document.getElementById('f-org').value.trim(),
+        service: sel.selectedIndex > 0 ? sel.options[sel.selectedIndex].textContent : '',
+        message: document.getElementById('f-msg').value.trim(),
+        language: lang,
+        botcheck: document.getElementById('f-botcheck').checked
+      })
+    });
+    const data = await res.json();
+    if (!res.ok || !data.success) throw new Error(data.message || res.status);
+    showFormStatus('ok');
+    form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
+  } catch (err) {
+    showFormStatus('err');
+    btn.disabled = false;
+  }
+}
+
+/* Scroll to top */
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scroll-top');
+  if (btn) btn.classList.toggle('visible', window.scrollY > 400);
+});
+
+/* Init */
+renderServices();
+renderFields();
+renderWhy();
+renderSteps();
+applyLangAttrs();
+</script>
+
+
+
+</body></html>
